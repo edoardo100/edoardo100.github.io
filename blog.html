@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog - My Simple Webpage</title>
+  <title>Blog - Edoardo's webpage</title>
 
   <link href="custom.css" rel="stylesheet">
   <!-- Bootstrap CSS -->
@@ -11,9 +11,11 @@
 </head>
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e34949;">
     <div class="container">
-      <a class="navbar-brand" href="index.html">My Webpage</a>
+        <a class="navbar-brand" href="index.html">
+            <img src="my_logo_blog.png" alt="My Logo" height="40">
+        </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,6 +23,9 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="blog.html">Blog</a>
@@ -42,6 +47,16 @@
       </div>
       <!-- You can add more blog posts here -->
     </div>
+    <div class="container mt-4">
+        <div class="card">
+          <img src="me_board.jpg" class="card-img-top mx-auto" alt="Blog Image" style="max-width: 500px;">
+          <div class="card-body">
+            <h5 class="card-title">Fancy Blog Card</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut interdum velit. Quisque eu urna vel risus vulputate euismod sit amet eget risus.</p>
+            <a href="#" class="btn" style="background-color: #e34949;">Read More</a>
+          </div>
+        </div>
+      </div>
   </section>
 
   <!-- Bootstrap JavaScript and Popper.js -->
