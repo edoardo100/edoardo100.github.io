@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +13,16 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="my_logo_primary.png" alt="My Logo" height="40">
-        </a>
+      <a class="navbar-brand" href="index.html">
+        <img src="my_logo_primary.png" alt="My Logo" height="40">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link active" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="research.html">Research</a>
@@ -42,97 +42,57 @@
   <section id="about" class="py-5" style="background-color: var(--bg-color);">
     <div class="container">
       <h2 class="mb-4 text-center">About Me</h2>
+
       <div class="container py-5">
+        <!-- All of the blocks below come from data/cv.json -->
         <h2>Current Position</h2>
-        <ul class="list-group mt-3">
-          <li class="list-group-item">
-          Post-doctoral Researcher (assegno di tipo b) at University of Pavia
-          <br> Project title: Numerical Methods for Partial Differential Equations (PDEs)
-          <br> Supervisor: Prof. Luca Franco Pavarino 
-          <span class="float-end"> April 2024 - Present </span>  
-          </li>
-        </ul>
-        <!-- Education Section -->
+        <ul class="list-group mt-3" data-cv="positions"></ul>
+
         <h2 class="mt-4">Education</h2>
-        <ul class="list-group mt-3">
-          <li class="list-group-item">
-            PhD student in Computational Mathematics and Decision Sciences at University of Pavia (MICROCARD scolarship)
-            <br>Thesis title: Efficient Solvers and Machine Learning Approaches in Cardiac Electrophysiology on High-Performance Computing Architectures
-            <br>Supervisor: Prof. Luca Franco Pavarino
-            <br>Co-Supervisor: Prof. Simone Scacchi
-            <span class="float-end">October 2021 - December 2024</span>
-          </li>
-          <li class="list-group-item">
-            Master Degree in Physical Sciences (Quantum Technologies curriculum) at University of Pavia - Pavia (PV)
-            <br>Final mark: 110/110 cum laude
-            <br>Thesis title: Local Isotropic Number Preserving Interaction in Discrete Time Dirac Quantum Cellular Automata
-            <br>Thesis supervisor: Prof. Paolo Perinotti
-            <br>Thesis co-supervisor: Dr. Alessandro Bisio
-            <span class="float-end">October 2019 - September 2021</span>
-          </li>
-          <li class="list-group-item">
-            Bachelor Degree in Physics at University of Pavia - Pavia (PV)
-            <br>Final mark: 109/110
-            <br>Thesis title: Quantum State Discrimination by Local Operations and Classical Communication
-            <br>Thesis supervisor: Prof. Paolo Perinotti
-            <span class="float-end">October 2016 - September 2019</span>
-          </li>
-          <li class="list-group-item">
-            Scientific Diploma at Liceo Scientifico Antonelli- Novara (NO)
-            <br>Final mark: 100/100 cum laude
-            <span class="float-end">September 2011 - June 2016</span>
-          </li>
-        </ul>
-      
-        <!-- Technology Skills Section -->
+        <ul class="list-group mt-3" data-cv="education"></ul>
+
+        <h2 class="mt-4">Technical Skills</h2>
+        <p class="mt-3" data-cv="skills"></p>
+
+        <h2 class="mt-4">Languages</h2>
+        <ul class="list-group mt-3" data-cv="languages"></ul>
+      </div>
+
       <section class="py-5">
         <div class="container">
-          <h2 class="mb-4">Technical Skills</h2>
-          <p>
-            <strong>Programming Languages:</strong> C, C++, Python (modules: sympy, numpy, scipy, Qiskit, tensorflow, pytorch, JAX), MATLAB, Julia, Bash, LaTeX, VHDL.
-            <br><strong>Operating Systems:</strong> Linux, Windows, macOS.
-            <br><strong>Other Skills:</strong> Parallel computing (MPI), GPU (CUDA), HPC on clusters, Arduino, HTML and basic web design (as you can see from this webpage :)), basic knowledge of FPGA and electronic devices.
-          </p>
+          <!-- Top row: two pictures -->
+          <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <div class="col text-center">
+              <figure class="figure">
+                <img src="me_board.jpg" alt="How to recognize me" class="img-fluid rounded shadow mb-3">
+                <figcaption class="figure-caption text-muted mb-4">How to recognize me.</figcaption>
+
+                <!-- Smaller graduation picture below -->
+                <img src="graduation.jpg" alt="Graduation day" class="img-fluid rounded shadow" style="max-width: 75%;">
+                <figcaption class="figure-caption text-muted mt-2">
+                  Another picture of mine on my graduation day.
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="col text-center">
+              <figure class="figure">
+                <img src="me_1.jpeg" alt="Sometimes I happen to work" class="img-fluid rounded shadow">
+                <figcaption class="figure-caption text-muted mt-2">Sometimes I happen to work.</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </section>
 
-      
-      <section class="py-5">
-  <div class="container">
-    <!-- Top row: two pictures -->
-    <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-      <div class="col text-center">
-        <figure class="figure">
-          <img src="me_board.jpg" alt="How to recognize me" class="img-fluid rounded shadow mb-3">
-          <figcaption class="figure-caption text-muted mb-4">How to recognize me.</figcaption>
-          
-          <!-- Smaller graduation picture below -->
-          <img src="graduation.jpg" alt="Graduation day" class="img-fluid rounded shadow" style="max-width: 75%;">
-          <figcaption class="figure-caption text-muted mt-2">
-            Another picture of mine on my graduation day.
-          </figcaption>
-        </figure>
+      <div class="text-center">
+        <a class="btn btn-primary my-4" href="https://www.youtube.com/watch?v=1MVw4dMq8Bk" target="_blank" style="background-color: var(--primary-color); border-color: var(--primary-color);">Click here to see me in action</a>
       </div>
-
-      <div class="col text-center">
-        <figure class="figure">
-          <img src="me_1.jpeg" alt="Sometimes I happen to work" class="img-fluid rounded shadow">
-          <figcaption class="figure-caption text-muted mt-2">Sometimes I happen to work.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-      
-        <!-- Modified button with an external link -->
-        <div class="text-center">
-          <a class="btn btn-primary my-4" href="https://www.youtube.com/watch?v=1MVw4dMq8Bk" target="_blank" style="background-color: var(--primary-color); border-color: var(--primary-color);">Click here to see me in action</a>
-        </div>
     </div>
   </section>
 
   <!-- Bootstrap JavaScript and Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
